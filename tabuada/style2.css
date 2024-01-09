@@ -1,0 +1,72 @@
+body {
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 20px;
+}
+
+.caixa__title {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.caixa__bt {
+     font-weight: 600;
+     display: grid;
+     justify-content: center;
+     align-items: center;
+}
+
+.caixa__bt > *:not(:last-child) {
+     margin: 5px;
+}
+
+.caixa__bt-perso {
+     background-color: #f39c12;
+     height: 30px;
+     border-radius: 8px;
+     border: solid 2px;
+     font-family: 'Courier New', Courier, monospace;
+     
+}
+
+.caixa {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+} 
+
+.caixa__filho {
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     border: 5px solid;
+     padding: 50px;
+     border-radius: 10px;
+     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#mostraResultado {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 10px;
+} 
+
+.caixa__ipt {
+     width: 100px;
+     height: 20px;
+}
+
+.link {
+     margin-top: 20px;
+     border: solid 2px;
+     text-decoration: none;
+     text-align: center;
+     justify-content: center;
+     color: black;
+}
+
+.link:hover {
+     color: red;
+}

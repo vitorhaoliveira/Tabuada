@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Imprime Tabuada</title>
+     <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+     <div class="caixa">
+          <div class="caixa__filho">
+               <h2 class="caixa__title">Tabuada automática</h2>
+               <p class="caixa__text caixa__title">Digite o número da tabuada que deseja.</p>
+               <div class="caixa__bt">
+                    <input type="text" class="caixa__ipt">
+                    <button class="caixa__bt-perso">ENVIAR</button>
+                    <div id="mostraResultado"></div>
+                    <a class="caixa__bt-perso link" href="../adivinha/adivinha-button.html">Adivinha</a>
+               </div>
+          </div>
+     </div>
+     <script>
+          let ipt = document.querySelector(".caixa__ipt")
+          let bt = document.querySelector(".caixa__bt-perso")
+          let mostraResultado = document.querySelector(".mostraResultado")
+
+          function mostra(frase) {
+               alert(frase)
+               document.write("</br>")
+          }
+
+          function multi() {
+               for(let i = 1; i <= 10; i++) {
+               let resultado = ipt.value * i
+               document.getElementById("mostraResultado").innerHTML += ipt.value + " x " + i + " = " + resultado + "</br>"
+               }
+          }
+          bt.onclick = multi
+     </script>
+</body>
+</html>

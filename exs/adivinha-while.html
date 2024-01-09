@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Adivinha</title>
+</head>
+<body>
+     <script>
+     function pulaLinha() {
+          document.write("</br>")
+           document.write("</br>")
+     }
+
+     function mostra(frase) {
+          document.write(frase)
+          pulaLinha()
+     }
+
+     let numeroPensado = Math.round(Math.random() * 10)
+     let tentativa = 1
+
+     while (tentativa <= 3) {
+
+          let chute = parseInt(prompt("digite seu chute!"))
+
+          if (chute == numeroPensado) {
+          mostra("acertou miseravi! O número certo era " + numeroPensado)
+          break
+          } else {
+          mostra("errou cabaço!")
+          }
+          tentativa++
+     }
+     mostra("Fim")
+     </script>
+</body>
+</html>
